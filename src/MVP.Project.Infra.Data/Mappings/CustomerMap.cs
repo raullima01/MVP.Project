@@ -9,7 +9,7 @@ namespace MVP.Project.Infra.Data.Mappings
         public void Configure(EntityTypeBuilder<Customer> builder)
         {
             builder.Property(c => c.Id)
-                .HasColumnName("Id");
+            .HasColumnName("Id");
 
             builder.Property(c => c.Name)
                 .HasColumnType("varchar(100)")
@@ -19,7 +19,16 @@ namespace MVP.Project.Infra.Data.Mappings
             builder.Property(c => c.Email)
                 .HasColumnType("varchar(100)")
                 .HasMaxLength(100)
-                .IsRequired();   
+                .IsRequired();
+
+            builder.Property(c => c.DocumentNumber)
+                .HasColumnName("DocumentNumber")
+                .HasColumnType("varchar(20)")
+                .HasMaxLength(20)
+                .IsRequired();
+
+            builder.Ignore(c => c.DocumentType);
+            builder.Ignore("_document");
         }
     }
 }

@@ -1,21 +1,35 @@
-#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
-
-FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
+# Etapa base
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+# Etapa de construção
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY ["src/MVP.Project.Services.Api/MVP.Project.Services.Api.csproj", "src/MVP.Project.Services.Api/"]
-RUN dotnet restore "src/MVP.Project.Services.Api/MVP.Project.Services.Api.csproj"
+
+# Copia apenas o arquivo de projeto e restaura as dependências
+COPY ["MVP.Project.Services.Api/MVP.Project.Services.Api.csproj", "MVP.Project.Services.Api/"]
+COPY ["MVP.Project.Domain/MVP.Project.Domain.csproj", "MVP.Project.Domain/"]
+COPY ["MVP.Project.Domain.Core/MVP.Project.Domain.Core.csproj", "MVP.Project.Domain.Core/"]
+COPY ["MVP.Project.Application/MVP.Project.Application.csproj", "MVP.Project.Application/"]
+COPY ["MVP.Project.Infra.Data/MVP.Project.Infra.Data.csproj", "MVP.Project.Infra.Data/"]
+COPY ["MVP.Project.Infra.CrossCutting.IoC/MVP.Project.Infra.CrossCutting.IoC.csproj", "MVP.Project.Infra.CrossCutting.IoC/"]
+COPY ["MVP.Project.Infra.CrossCutting.Bus/MVP.Project.Infra.CrossCutting.Bus.csproj", "MVP.Project.Infra.CrossCutting.Bus/"]
+COPY ["MVP.Project.Infra.CrossCutting.Identity/MVP.Project.Infra.CrossCutting.Identity.csproj", "MVP.Project.Infra.CrossCutting.Identity/"]
+
+RUN dotnet restore "MVP.Project.Services.Api/MVP.Project.Services.Api.csproj"
+
+# Copia o restante dos arquivos do projeto
 COPY . .
-WORKDIR "/src/src/MVP.Project.Services.Api"
+WORKDIR "/src/MVP.Project.Services.Api"
 RUN dotnet build "MVP.Project.Services.Api.csproj" -c Release -o /app/build
 
+# Etapa de publicação
 FROM build AS publish
-RUN dotnet publish "MVP.Project.Services.Api.csproj" -c Release -o /app/publish
+RUN dotnet publish "MVP.Project.Services.Api.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
+# Etapa final
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .

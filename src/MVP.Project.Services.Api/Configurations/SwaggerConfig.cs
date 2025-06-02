@@ -17,8 +17,17 @@ namespace MVP.Project.Services.Api.Configurations
                     Version = "v1",
                     Title = "MvpProject Project",
                     Description = "MvpProject API Swagger surface",
-                    Contact = new OpenApiContact { Name = "Raul Francisco Moreira Lima", Email = "raul.fml@outlook.com.br", Url = new Uri("www.github.com.br/raulzerahh") },
-                    License = new OpenApiLicense { Name = "MIT", Url = new Uri("https://www.github.com.br/raulzerahh") }
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Raul Francisco Moreira Lima",
+                        Email = "raul.fml@outlook.com.br",
+                        Url = new Uri("https://github.com/raullima01") // Verifique novamente esta URI
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "MIT",
+                        Url = new Uri("https://github.com/raullima01") // E esta URI também
+                    }
                 });
 
                 s.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme

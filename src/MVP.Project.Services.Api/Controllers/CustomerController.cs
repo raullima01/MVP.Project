@@ -1,9 +1,8 @@
-using MVP.Project.Application.EventSourcedNormalizers;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using MVP.Project.Application.Interfaces;
 using MVP.Project.Application.ViewModels;
-using MVP.Project.Infra.CrossCutting.Identity.Authorization;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+using MVP.Project.Application.EventSourcedNormalizers;
 
 namespace MVP.Project.Services.Api.Controllers
 {
@@ -18,7 +17,7 @@ namespace MVP.Project.Services.Api.Controllers
         }
 
         [AllowAnonymous]
-        [HttpGet("customer")]
+        [HttpGet("customer/get")]
         public async Task<IEnumerable<CustomerViewModel>> Get()
         {
             return await _customerAppService.GetAll();
@@ -31,22 +30,25 @@ namespace MVP.Project.Services.Api.Controllers
             return await _customerAppService.GetById(id);
         }
 
-        [CustomAuthorize("Customers", "Write")]
+        [AllowAnonymous]
         [HttpPost("customer")]
         public async Task<IActionResult> Post([FromBody]CustomerViewModel customerViewModel)
         {
             return !ModelState.IsValid ? CustomResponse(ModelState) : CustomResponse(await _customerAppService.Register(customerViewModel));
         }
-
-        [CustomAuthorize("Customers", "Write")]
-        [HttpPut("customer")]
-        public async Task<IActionResult> Put([FromBody]CustomerViewModel customerViewModel)
+        
+        [AllowAnonymous]
+        [HttpPatch("customer/update/{id:guid}")]
+        public async Task<IActionResult> Patch(Guid id, [FromBody] CustomerViewModel customerViewModel)
         {
-            return !ModelState.IsValid ? CustomResponse(ModelState) : CustomResponse(await _customerAppService.Update(customerViewModel));
+            if (!ModelState.IsValid) return CustomResponse(ModelState);
+
+            var result = await _customerAppService.Update(id, customerViewModel);
+            return CustomResponse(result);
         }
 
-        [CustomAuthorize("Customers", "Remove")]
-        [HttpDelete("customer")]
+        [AllowAnonymous]
+        [HttpDelete("customer/remove")]
         public async Task<IActionResult> Delete(Guid id)
         {
             return CustomResponse(await _customerAppService.Remove(id));

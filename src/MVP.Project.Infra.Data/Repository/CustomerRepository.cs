@@ -20,29 +20,12 @@ namespace MVP.Project.Infra.Data.Repository
             DbSet = Db.Set<Customer>();
         }
 
-        public IUnitOfWork UnitOfWork => Db;
-
-        public async Task<Customer> GetById(Guid id)
-        {
-            return await DbSet.FindAsync(id);
-        }
-
-        public async Task<IEnumerable<Customer>> GetAll()
-        {
-            return await DbSet.ToListAsync();
-        }
-
-        public async Task<Customer> GetByEmail(string email)
-        {
-            return await DbSet.AsNoTracking().FirstOrDefaultAsync(c => c.Email == email);
-        }
-
         public void Add(Customer customer)
         {
-           DbSet.Add(customer);
+            DbSet.Add(customer);
         }
 
-        public void Update(Customer customer)
+        public void Update(Guid id, Customer customer)
         {
             DbSet.Update(customer);
         }
@@ -50,6 +33,28 @@ namespace MVP.Project.Infra.Data.Repository
         public void Remove(Customer customer)
         {
             DbSet.Remove(customer);
+        }
+
+        public IUnitOfWork UnitOfWork => Db;
+
+        public async Task<IEnumerable<Customer>> GetAll()
+        {
+            return await DbSet.AsNoTracking().ToListAsync();
+        }
+
+        public async Task<Customer> GetById(Guid id)
+        {
+            return await DbSet.AsNoTracking().FirstOrDefaultAsync(c => c.Id == id);
+        }
+
+        public async Task<Customer> GetByEmail(string email)
+        {
+            return await DbSet.AsNoTracking().FirstOrDefaultAsync(c => c.Email == email);
+        }
+
+        public async Task<Customer> GetByDocumentNumber(string documentNumber)
+        {
+            return await DbSet.AsNoTracking().FirstOrDefaultAsync(c => c.DocumentNumber == documentNumber);
         }
 
         public void Dispose()

@@ -37,9 +37,25 @@ namespace MVP.Project.Application.Services
             return await _mediator.SendCommand(registerCommand);
         }
 
-        public async Task<ValidationResult> Update(CustomerViewModel customerViewModel)
+        public async Task<ValidationResult> Update(Guid id, CustomerViewModel customerViewModel)
         {
-            var updateCommand = customerViewModel.ToUpdateCommand();
+            var updateCommand = new UpdateCustomerCommand(
+                id, 
+                customerViewModel.Name, 
+                customerViewModel.Email,
+                customerViewModel.DocumentNumber, 
+                customerViewModel.BirthDate, 
+                customerViewModel.Phone,
+                customerViewModel.StateInscription, 
+                customerViewModel.StreetAddress, 
+                customerViewModel.BuildingNumber,
+                customerViewModel.SecondaryAddress, 
+                customerViewModel.Neighborhood, 
+                customerViewModel.ZipCode,
+                customerViewModel.City, 
+                customerViewModel.State, 
+                customerViewModel.Active);
+
             return await _mediator.SendCommand(updateCommand);
         }
 

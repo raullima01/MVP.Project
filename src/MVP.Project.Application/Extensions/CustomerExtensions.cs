@@ -41,27 +41,66 @@ namespace MVP.Project.Application.Extensions
         {
             if (customer == null) return null;
 
-            return new Customer(customer.Id, customer.Name, customer.Email, customer.DocumentNumber, customer.BirthDate, 
-                customer.Phone, customer.StateInscription, customer.StreetAddress, customer.BuildingNumber, customer.SecondaryAddress, 
-                customer.Neighborhood, customer.ZipCode, customer.City, customer.State, customer.Active);
+            return new Customer(
+                customer.Id,
+                customer.Name, 
+                customer.Email, 
+                customer.DocumentNumber, 
+                customer.BirthDate, 
+                customer.Phone, 
+                customer.StateInscription, 
+                customer.StreetAddress, 
+                customer.BuildingNumber, 
+                customer.SecondaryAddress, 
+                customer.Neighborhood, 
+                customer.ZipCode, 
+                customer.City, 
+                customer.State, 
+                customer.Active);
         }
 
         public static RegisterNewCustomerCommand ToRegisterCommand(this CustomerViewModel customer)
         {
             if (customer == null) return null;
 
-            return new RegisterNewCustomerCommand(customer.Id,customer.Name, customer.Email, customer.DocumentNumber, customer.BirthDate, 
-                customer.Phone, customer.StateInscription, customer.StreetAddress, customer.BuildingNumber, customer.SecondaryAddress, 
-                customer.Neighborhood, customer.ZipCode, customer.City, customer.State, customer.Active);
+            return new RegisterNewCustomerCommand(
+                customer.Id,
+                customer.Name, 
+                customer.Email, 
+                customer.DocumentNumber, 
+                customer.BirthDate, 
+                customer.Phone, 
+                customer.StateInscription, 
+                customer.StreetAddress, 
+                customer.BuildingNumber, 
+                customer.SecondaryAddress, 
+                customer.Neighborhood, 
+                customer.ZipCode, 
+                customer.City, 
+                customer.State, 
+                customer.Active);
         }
 
         public static UpdateCustomerCommand ToUpdateCommand(this CustomerViewModel customer)
         {
             if (customer == null) return null;
 
-            return new UpdateCustomerCommand(customer.Id, customer.Name, customer.Email, customer.DocumentNumber, customer.BirthDate, 
-                customer.Phone, customer.StateInscription, customer.StreetAddress, customer.BuildingNumber, customer.SecondaryAddress, 
-                customer.Neighborhood, customer.ZipCode, customer.City, customer.State, customer.Active);
+            return new UpdateCustomerCommand(
+                customer.Id, 
+                customer.Name, 
+                customer.Email, 
+                customer.DocumentNumber, 
+                customer.BirthDate, 
+                customer.Phone, 
+                customer.StateInscription, 
+                customer.StreetAddress, 
+                customer.BuildingNumber, 
+                customer.SecondaryAddress, 
+                customer.Neighborhood, 
+                customer.ZipCode, 
+                customer.City, 
+                customer.State, 
+                customer.Active);
         }
     }
 }

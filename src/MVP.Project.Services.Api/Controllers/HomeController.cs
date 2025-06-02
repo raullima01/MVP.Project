@@ -10,7 +10,7 @@ namespace MVP.Project.Services.Api.Controllers
             return View();
         }
 
-        [Route("error/{id:length(3,3)}")]
+        [HttpGet("error/{id:length(3,3)}")]
         public IActionResult Errors(int id)
         {
             var modelErro = new ErrorViewModel();

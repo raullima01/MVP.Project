@@ -9,13 +9,11 @@ namespace MVP.Project.Application.Interfaces
 {
     public interface ICustomerAppService : IDisposable
     {
-        Task<IEnumerable<CustomerViewModel>> GetAll();
-        Task<CustomerViewModel> GetById(Guid id);
-        
         Task<ValidationResult> Register(CustomerViewModel customerViewModel);
-        Task<ValidationResult> Update(CustomerViewModel customerViewModel);
+        Task<ValidationResult> Update(Guid id, CustomerViewModel customerViewModel);
         Task<ValidationResult> Remove(Guid id);
-
+        Task<IEnumerable<CustomerViewModel>> GetAll();
         Task<IList<CustomerHistoryData>> GetAllHistory(Guid id);
+        Task<CustomerViewModel> GetById(Guid id);
     }
 }

@@ -5,7 +5,7 @@
         public RegisterNewCustomerCommandValidation()
         {
             ValidateName();
-            ValidateBirthDate();
+            ValidatePersonBirthDate();
             ValidateEmail();
         }
     }

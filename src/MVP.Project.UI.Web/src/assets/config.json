@@ -1,0 +1,18 @@
+{
+  "apiUrl": "https://localhost:44389",
+  "endpoints": {
+    "auth": {
+      "register": "/account/new",
+      "login": "/account/enter"
+    },
+    "customer": {
+      "getAll": "/customer/get",
+      "getById": "/customer/{id}",
+      "create": "/customer",
+      "update": "/customer/update/{id}",
+      "delete": "/customer/remove",
+      "history": "/customer/history/{id}"
+    }
+  },
+  "version": "v1"
+}

@@ -6,7 +6,7 @@
         {
             ValidateId();
             ValidateName();
-            ValidateBirthDate();
+            ValidatePersonBirthDate();
             ValidateEmail();
         }
     }
