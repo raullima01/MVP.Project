@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>disable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\MVP.Project.Application\MVP.Project.Application.csproj" />
+		<ProjectReference Include="..\MVP.Project.Domain\MVP.Project.Domain.csproj" />
+		<ProjectReference Include="..\MVP.Project.Infra.Data\MVP.Project.Infra.Data.csproj" />
+	</ItemGroup>
+
+</Project>

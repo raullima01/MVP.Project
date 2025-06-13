@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mvp-sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=${DB_SA_PASSWORD}
+      - MSSQL_PID=Express
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+    networks:
+      - mvp-network
+
+  mvp.project.services.api:
+    build:
+      context: .  # Alterado para usar o diretório src como contexto
+      dockerfile: ./Dockerfile  # Caminho para o Dockerfile no diretório raiz
+    container_name: mvp-api
+    ports:
+      - "5000:80"  # Adicionado mapeamento de porta HTTP
+    depends_on:
+      - sqlserver
+    environment:
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=${DB_NAME};User Id=sa;Password=${DB_SA_PASSWORD};Encrypt=True;TrustServerCertificate=True;Pooling=True;Max Pool Size=100;
+    networks:
+      - mvp-network
+    restart: unless-stopped
+
+networks:
+  mvp-network:
+    driver: bridge
+
+volumes:
+  sqlserver-data:

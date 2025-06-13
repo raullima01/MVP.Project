@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>disable</Nullable>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\MVP.Project.Domain\MVP.Project.Domain.csproj" />
+		<ProjectReference Include="..\MVP.Project.Infra.CrossCutting.Identity\MVP.Project.Infra.CrossCutting.Identity.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Azure.Identity" Version="1.13.2" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.3" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.3" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="System.Formats.Asn1" Version="9.0.3" />
+		<PackageReference Include="System.Security.Cryptography.Pkcs" Version="9.0.3" />
+		<PackageReference Include="System.Security.Cryptography.Xml" Version="9.0.3" />
+	</ItemGroup>
+</Project>

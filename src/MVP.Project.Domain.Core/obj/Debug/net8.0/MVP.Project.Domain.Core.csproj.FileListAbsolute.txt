@@ -1,0 +1,13 @@
+C:\GIT\MVP\MVPProject\src\MVP.Project.Domain.Core\bin\Debug\net8.0\MVP.Project.Domain.Core.deps.json
+C:\GIT\MVP\MVPProject\src\MVP.Project.Domain.Core\bin\Debug\net8.0\MVP.Project.Domain.Core.dll
+C:\GIT\MVP\MVPProject\src\MVP.Project.Domain.Core\bin\Debug\net8.0\MVP.Project.Domain.Core.pdb
+C:\GIT\MVP\MVPProject\src\MVP.Project.Domain.Core\obj\Debug\net8.0\MVP.Project.Domain.Core.csproj.AssemblyReference.cache
+C:\GIT\MVP\MVPProject\src\MVP.Project.Domain.Core\obj\Debug\net8.0\MVP.Project.Domain.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT\MVP\MVPProject\src\MVP.Project.Domain.Core\obj\Debug\net8.0\MVP.Project.Domain.Core.AssemblyInfoInputs.cache
+C:\GIT\MVP\MVPProject\src\MVP.Project.Domain.Core\obj\Debug\net8.0\MVP.Project.Domain.Core.AssemblyInfo.cs
+C:\GIT\MVP\MVPProject\src\MVP.Project.Domain.Core\obj\Debug\net8.0\MVP.Project.Domain.Core.csproj.CoreCompileInputs.cache
+C:\GIT\MVP\MVPProject\src\MVP.Project.Domain.Core\obj\Debug\net8.0\MVP.Project.Domain.Core.sourcelink.json
+C:\GIT\MVP\MVPProject\src\MVP.Project.Domain.Core\obj\Debug\net8.0\MVP.Project.Domain.Core.dll
+C:\GIT\MVP\MVPProject\src\MVP.Project.Domain.Core\obj\Debug\net8.0\refint\MVP.Project.Domain.Core.dll
+C:\GIT\MVP\MVPProject\src\MVP.Project.Domain.Core\obj\Debug\net8.0\MVP.Project.Domain.Core.pdb
+C:\GIT\MVP\MVPProject\src\MVP.Project.Domain.Core\obj\Debug\net8.0\ref\MVP.Project.Domain.Core.dll

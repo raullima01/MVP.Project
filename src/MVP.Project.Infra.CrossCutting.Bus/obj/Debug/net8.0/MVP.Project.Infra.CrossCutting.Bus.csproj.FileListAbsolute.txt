@@ -1,0 +1,16 @@
+C:\GIT\MVP\MVPProject\src\MVP.Project.Infra.CrossCutting.Bus\bin\Debug\net8.0\MVP.Project.Infra.CrossCutting.Bus.deps.json
+C:\GIT\MVP\MVPProject\src\MVP.Project.Infra.CrossCutting.Bus\bin\Debug\net8.0\MVP.Project.Infra.CrossCutting.Bus.dll
+C:\GIT\MVP\MVPProject\src\MVP.Project.Infra.CrossCutting.Bus\bin\Debug\net8.0\MVP.Project.Infra.CrossCutting.Bus.pdb
+C:\GIT\MVP\MVPProject\src\MVP.Project.Infra.CrossCutting.Bus\bin\Debug\net8.0\MVP.Project.Domain.Core.dll
+C:\GIT\MVP\MVPProject\src\MVP.Project.Infra.CrossCutting.Bus\bin\Debug\net8.0\MVP.Project.Domain.Core.pdb
+C:\GIT\MVP\MVPProject\src\MVP.Project.Infra.CrossCutting.Bus\obj\Debug\net8.0\MVP.Project.Infra.CrossCutting.Bus.csproj.AssemblyReference.cache
+C:\GIT\MVP\MVPProject\src\MVP.Project.Infra.CrossCutting.Bus\obj\Debug\net8.0\MVP.Project.Infra.CrossCutting.Bus.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT\MVP\MVPProject\src\MVP.Project.Infra.CrossCutting.Bus\obj\Debug\net8.0\MVP.Project.Infra.CrossCutting.Bus.AssemblyInfoInputs.cache
+C:\GIT\MVP\MVPProject\src\MVP.Project.Infra.CrossCutting.Bus\obj\Debug\net8.0\MVP.Project.Infra.CrossCutting.Bus.AssemblyInfo.cs
+C:\GIT\MVP\MVPProject\src\MVP.Project.Infra.CrossCutting.Bus\obj\Debug\net8.0\MVP.Project.Infra.CrossCutting.Bus.csproj.CoreCompileInputs.cache
+C:\GIT\MVP\MVPProject\src\MVP.Project.Infra.CrossCutting.Bus\obj\Debug\net8.0\MVP.Project.Infra.CrossCutting.Bus.sourcelink.json
+C:\GIT\MVP\MVPProject\src\MVP.Project.Infra.CrossCutting.Bus\obj\Debug\net8.0\MVP.Proj.D4E1B622.Up2Date
+C:\GIT\MVP\MVPProject\src\MVP.Project.Infra.CrossCutting.Bus\obj\Debug\net8.0\MVP.Project.Infra.CrossCutting.Bus.dll
+C:\GIT\MVP\MVPProject\src\MVP.Project.Infra.CrossCutting.Bus\obj\Debug\net8.0\refint\MVP.Project.Infra.CrossCutting.Bus.dll
+C:\GIT\MVP\MVPProject\src\MVP.Project.Infra.CrossCutting.Bus\obj\Debug\net8.0\MVP.Project.Infra.CrossCutting.Bus.pdb
+C:\GIT\MVP\MVPProject\src\MVP.Project.Infra.CrossCutting.Bus\obj\Debug\net8.0\ref\MVP.Project.Infra.CrossCutting.Bus.dll
