@@ -13,6 +13,7 @@
         "packagesPath": "C:\\Users\\raulf\\.nuget\\packages\\",
         "outputPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
@@ -56,8 +57,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -91,6 +91,7 @@
         "packagesPath": "C:\\Users\\raulf\\.nuget\\packages\\",
         "outputPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
@@ -127,8 +128,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -168,6 +168,7 @@
         "packagesPath": "C:\\Users\\raulf\\.nuget\\packages\\",
         "outputPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
@@ -211,8 +212,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -264,6 +264,7 @@
         "packagesPath": "C:\\Users\\raulf\\.nuget\\packages\\",
         "outputPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.Bus\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
@@ -304,8 +305,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -339,6 +339,7 @@
         "packagesPath": "C:\\Users\\raulf\\.nuget\\packages\\",
         "outputPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.Identity\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
@@ -379,8 +380,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -470,6 +470,7 @@
         "packagesPath": "C:\\Users\\raulf\\.nuget\\packages\\",
         "outputPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.IoC\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
@@ -516,8 +517,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -551,6 +551,7 @@
         "packagesPath": "C:\\Users\\raulf\\.nuget\\packages\\",
         "outputPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
@@ -594,8 +595,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -659,6 +659,7 @@
         "packagesPath": "C:\\Users\\raulf\\.nuget\\packages\\",
         "outputPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Services.Api\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
@@ -708,8 +709,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
