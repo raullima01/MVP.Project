@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T5oMdWs54UU=",
+  "dgSpecHash": "liy0P7iQX5A=",
   "success": true,
-  "projectFilePath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.IoC\\MVP.Project.Infra.CrossCutting.IoC.csproj",
+  "projectFilePath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.CrossCutting.IoC\\MVP.Project.Infra.CrossCutting.IoC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\raulf\\.nuget\\packages\\azure.core\\1.44.1\\azure.core.1.44.1.nupkg.sha512",
     "C:\\Users\\raulf\\.nuget\\packages\\azure.identity\\1.13.2\\azure.identity.1.13.2.nupkg.sha512",

@@ -1,19 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.IoC\\MVP.Project.Infra.CrossCutting.IoC.csproj": {}
+    "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.CrossCutting.IoC\\MVP.Project.Infra.CrossCutting.IoC.csproj": {}
   },
   "projects": {
-    "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Application\\MVP.Project.Application.csproj": {
+    "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Application\\MVP.Project.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Application\\MVP.Project.Application.csproj",
+        "projectUniqueName": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Application\\MVP.Project.Application.csproj",
         "projectName": "MVP.Project.Application",
-        "projectPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Application\\MVP.Project.Application.csproj",
+        "projectPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Application\\MVP.Project.Application.csproj",
         "packagesPath": "C:\\Users\\raulf\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Application\\obj\\",
+        "outputPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
@@ -39,11 +38,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj": {
-                "projectPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj"
+              "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj": {
+                "projectPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj"
               },
-              "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.Data\\MVP.Project.Infra.Data.csproj": {
-                "projectPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.Data\\MVP.Project.Infra.Data.csproj"
+              "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.Data\\MVP.Project.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.Data\\MVP.Project.Infra.Data.csproj"
               }
             }
           }
@@ -57,7 +56,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -82,16 +82,15 @@
         }
       }
     },
-    "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain.Core\\MVP.Project.Domain.Core.csproj": {
+    "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain.Core\\MVP.Project.Domain.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain.Core\\MVP.Project.Domain.Core.csproj",
+        "projectUniqueName": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain.Core\\MVP.Project.Domain.Core.csproj",
         "projectName": "MVP.Project.Domain.Core",
-        "projectPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain.Core\\MVP.Project.Domain.Core.csproj",
+        "projectPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain.Core\\MVP.Project.Domain.Core.csproj",
         "packagesPath": "C:\\Users\\raulf\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain.Core\\obj\\",
+        "outputPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
@@ -128,7 +127,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -159,16 +159,15 @@
         }
       }
     },
-    "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj": {
+    "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj",
         "projectName": "MVP.Project.Domain",
-        "projectPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj",
+        "projectPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj",
         "packagesPath": "C:\\Users\\raulf\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain\\obj\\",
+        "outputPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
@@ -194,11 +193,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain.Core\\MVP.Project.Domain.Core.csproj": {
-                "projectPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain.Core\\MVP.Project.Domain.Core.csproj"
+              "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain.Core\\MVP.Project.Domain.Core.csproj": {
+                "projectPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain.Core\\MVP.Project.Domain.Core.csproj"
               },
-              "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.Bus\\MVP.Project.Infra.CrossCutting.Bus.csproj": {
-                "projectPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.Bus\\MVP.Project.Infra.CrossCutting.Bus.csproj"
+              "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.CrossCutting.Bus\\MVP.Project.Infra.CrossCutting.Bus.csproj": {
+                "projectPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.CrossCutting.Bus\\MVP.Project.Infra.CrossCutting.Bus.csproj"
               }
             }
           }
@@ -212,7 +211,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -255,16 +255,15 @@
         }
       }
     },
-    "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.Bus\\MVP.Project.Infra.CrossCutting.Bus.csproj": {
+    "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.CrossCutting.Bus\\MVP.Project.Infra.CrossCutting.Bus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.Bus\\MVP.Project.Infra.CrossCutting.Bus.csproj",
+        "projectUniqueName": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.CrossCutting.Bus\\MVP.Project.Infra.CrossCutting.Bus.csproj",
         "projectName": "MVP.Project.Infra.CrossCutting.Bus",
-        "projectPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.Bus\\MVP.Project.Infra.CrossCutting.Bus.csproj",
+        "projectPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.CrossCutting.Bus\\MVP.Project.Infra.CrossCutting.Bus.csproj",
         "packagesPath": "C:\\Users\\raulf\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.Bus\\obj\\",
+        "outputPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.CrossCutting.Bus\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
@@ -290,8 +289,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain.Core\\MVP.Project.Domain.Core.csproj": {
-                "projectPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain.Core\\MVP.Project.Domain.Core.csproj"
+              "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain.Core\\MVP.Project.Domain.Core.csproj": {
+                "projectPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain.Core\\MVP.Project.Domain.Core.csproj"
               }
             }
           }
@@ -305,7 +304,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -330,16 +330,15 @@
         }
       }
     },
-    "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.Identity\\MVP.Project.Infra.CrossCutting.Identity.csproj": {
+    "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.CrossCutting.Identity\\MVP.Project.Infra.CrossCutting.Identity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.Identity\\MVP.Project.Infra.CrossCutting.Identity.csproj",
+        "projectUniqueName": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.CrossCutting.Identity\\MVP.Project.Infra.CrossCutting.Identity.csproj",
         "projectName": "MVP.Project.Infra.CrossCutting.Identity",
-        "projectPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.Identity\\MVP.Project.Infra.CrossCutting.Identity.csproj",
+        "projectPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.CrossCutting.Identity\\MVP.Project.Infra.CrossCutting.Identity.csproj",
         "packagesPath": "C:\\Users\\raulf\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.Identity\\obj\\",
+        "outputPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.CrossCutting.Identity\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
@@ -365,8 +364,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj": {
-                "projectPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj"
+              "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj": {
+                "projectPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj"
               }
             }
           }
@@ -380,7 +379,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -461,16 +461,15 @@
         }
       }
     },
-    "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.IoC\\MVP.Project.Infra.CrossCutting.IoC.csproj": {
+    "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.CrossCutting.IoC\\MVP.Project.Infra.CrossCutting.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.IoC\\MVP.Project.Infra.CrossCutting.IoC.csproj",
+        "projectUniqueName": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.CrossCutting.IoC\\MVP.Project.Infra.CrossCutting.IoC.csproj",
         "projectName": "MVP.Project.Infra.CrossCutting.IoC",
-        "projectPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.IoC\\MVP.Project.Infra.CrossCutting.IoC.csproj",
+        "projectPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.CrossCutting.IoC\\MVP.Project.Infra.CrossCutting.IoC.csproj",
         "packagesPath": "C:\\Users\\raulf\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.IoC\\obj\\",
+        "outputPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.CrossCutting.IoC\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
@@ -496,14 +495,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Application\\MVP.Project.Application.csproj": {
-                "projectPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Application\\MVP.Project.Application.csproj"
+              "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Application\\MVP.Project.Application.csproj": {
+                "projectPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Application\\MVP.Project.Application.csproj"
               },
-              "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj": {
-                "projectPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj"
+              "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj": {
+                "projectPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj"
               },
-              "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.Data\\MVP.Project.Infra.Data.csproj": {
-                "projectPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.Data\\MVP.Project.Infra.Data.csproj"
+              "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.Data\\MVP.Project.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.Data\\MVP.Project.Infra.Data.csproj"
               }
             }
           }
@@ -517,7 +516,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -542,16 +542,15 @@
         }
       }
     },
-    "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.Data\\MVP.Project.Infra.Data.csproj": {
+    "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.Data\\MVP.Project.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.Data\\MVP.Project.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.Data\\MVP.Project.Infra.Data.csproj",
         "projectName": "MVP.Project.Infra.Data",
-        "projectPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.Data\\MVP.Project.Infra.Data.csproj",
+        "projectPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.Data\\MVP.Project.Infra.Data.csproj",
         "packagesPath": "C:\\Users\\raulf\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.Data\\obj\\",
+        "outputPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
@@ -577,11 +576,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj": {
-                "projectPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj"
+              "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj": {
+                "projectPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain\\MVP.Project.Domain.csproj"
               },
-              "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.Identity\\MVP.Project.Infra.CrossCutting.Identity.csproj": {
-                "projectPath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Infra.CrossCutting.Identity\\MVP.Project.Infra.CrossCutting.Identity.csproj"
+              "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.CrossCutting.Identity\\MVP.Project.Infra.CrossCutting.Identity.csproj": {
+                "projectPath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Infra.CrossCutting.Identity\\MVP.Project.Infra.CrossCutting.Identity.csproj"
               }
             }
           }
@@ -595,7 +594,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aeR488mI6AI=",
+  "dgSpecHash": "1nTLQMbsb5E=",
   "success": true,
-  "projectFilePath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Domain.Core\\MVP.Project.Domain.Core.csproj",
+  "projectFilePath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Domain.Core\\MVP.Project.Domain.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\raulf\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
     "C:\\Users\\raulf\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MVP.Project.Tests.Architecture")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf5cd5e435b4c86efb665a0dce2d5fec8dd65396")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+daf785436fdb662c1cb100484de891c468334ae9")]
 [assembly: System.Reflection.AssemblyProductAttribute("MVP.Project.Tests.Architecture")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MVP.Project.Tests.Architecture")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

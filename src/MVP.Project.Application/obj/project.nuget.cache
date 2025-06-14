@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8O5c6D7vhfg=",
+  "dgSpecHash": "kstH2JJxy3M=",
   "success": true,
-  "projectFilePath": "C:\\GIT\\MVP\\MVPProject\\src\\MVP.Project.Application\\MVP.Project.Application.csproj",
+  "projectFilePath": "C:\\Users\\raulf\\Source\\Repos\\MVP.Project\\src\\MVP.Project.Application\\MVP.Project.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\raulf\\.nuget\\packages\\azure.core\\1.44.1\\azure.core.1.44.1.nupkg.sha512",
     "C:\\Users\\raulf\\.nuget\\packages\\azure.identity\\1.13.2\\azure.identity.1.13.2.nupkg.sha512",
