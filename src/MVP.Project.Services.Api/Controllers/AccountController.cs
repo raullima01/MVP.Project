@@ -53,7 +53,7 @@ namespace MVP.Project.Services.Api.Controllers
         }
 
         [HttpPost]
-        [Route("enter")]
+        [Route("login")]
         public async Task<IActionResult> Login(LoginUser loginUser)
         {
             if (!ModelState.IsValid) return CustomResponse(ModelState);
@@ -68,11 +68,11 @@ namespace MVP.Project.Services.Api.Controllers
 
             if (result.IsLockedOut)
             {
-                AddError("This user is temporarily blocked");
+                AddError("usuário temporáriamente bloqueado");
                 return CustomResponse();
             }
 
-            AddError("Incorrect user or password");
+            AddError("Usuário ou Senha inválido");
             return CustomResponse();
         }
 

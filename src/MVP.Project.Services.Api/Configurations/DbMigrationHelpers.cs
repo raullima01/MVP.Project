@@ -37,30 +37,37 @@ namespace MVP.Project.Services.Api.Configurations
             }
         }
 
-        private static async Task EnsureSeedProducts(CustomerContext context, 
+        private static async Task EnsureSeedProducts(CustomerContext context,
                                                      EventStoreSqlContext contextStore,
                                                      MvpProjectIdentityContext contextIdentity)
         {
-            if (contextIdentity.Users.Any())
+            if (await contextIdentity.Users.AnyAsync())
                 return;
 
             var userId = Guid.NewGuid();
+            var userName = "cidadaojose@gmail.com";
+            var email = "cidadaojose@gmail.com";
+            var password = "minhaSenha123";
+            var passwordHasher = new PasswordHasher<IdentityUser>();
 
-            await contextIdentity.Users.AddAsync(new IdentityUser
+            var user = new IdentityUser
             {
                 Id = userId.ToString(),
-                UserName = "cidadaojose@gmail.com",
-                NormalizedUserName = "cidadaojose@gmail.com",
-                Email = "cidadaojose@gmail.com",
-                NormalizedEmail = "CIDADAOJOSE@GMAIL.COM",
+                UserName = userName,
+                NormalizedUserName = userName.ToUpper(),
+                Email = email,
+                NormalizedEmail = email.ToUpper(),
                 AccessFailedCount = 0,
                 LockoutEnabled = false,
-                PasswordHash = "AQAAAAIAAYagAAAAEGODJRgRnZQnCOYpgMXQdHnXGBCQAJLUQVBNKxnPtHnVHYlTpxlrQXKqBmYTMFYGWA==",
                 TwoFactorEnabled = false,
                 ConcurrencyStamp = Guid.NewGuid().ToString(),
                 EmailConfirmed = true,
                 SecurityStamp = Guid.NewGuid().ToString()
-            });
+            };
+
+            user.PasswordHash = passwordHasher.HashPassword(user, password);
+
+            await contextIdentity.Users.AddAsync(user);
 
             await contextIdentity.UserClaims.AddAsync(new IdentityUserClaim<string>
             {
@@ -71,7 +78,7 @@ namespace MVP.Project.Services.Api.Configurations
 
             await contextIdentity.SaveChangesAsync();
 
-            if (context.Customers.Any())
+            if (await context.Customers.AnyAsync())
                 return;
 
             var customer = new Customer(
@@ -90,10 +97,10 @@ namespace MVP.Project.Services.Api.Configurations
                 "Campinas",
                 "State",
                 true
-                );
+            );
 
             await context.Customers.AddAsync(customer);
-            
+
             await context.SaveChangesAsync();
 
             var customerEvent = new CustomerRegisteredEvent(customer.Id,

@@ -31,21 +31,21 @@ namespace MVP.Project.Services.Api.Controllers
             return await _customerAppService.GetById(id);
         }
 
-        [CustomAuthorize("Customers", "Write")]
+        [AllowAnonymous]
         [HttpPost("customer")]
         public async Task<IActionResult> Post([FromBody]CustomerViewModel customerViewModel)
         {
             return !ModelState.IsValid ? CustomResponse(ModelState) : CustomResponse(await _customerAppService.Register(customerViewModel));
         }
 
-        [CustomAuthorize("Customers", "Write")]
+        [AllowAnonymous]
         [HttpPut("customer")]
         public async Task<IActionResult> Put([FromBody]CustomerViewModel customerViewModel)
         {
             return !ModelState.IsValid ? CustomResponse(ModelState) : CustomResponse(await _customerAppService.Update(customerViewModel));
         }
 
-        [CustomAuthorize("Customers", "Remove")]
+        [AllowAnonymous]
         [HttpDelete("customer")]
         public async Task<IActionResult> Delete(Guid id)
         {

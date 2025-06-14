@@ -7327,6 +7327,7 @@
       "packagesPath": "C:\\Users\\raulf\\.nuget\\packages\\",
       "outputPath": "C:\\GIT\\MVP\\MVPProject\\tests\\MVP.Project.Tests.Architecture\\obj\\",
       "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
         "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
@@ -7388,8 +7389,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net9.0": {
