@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MVP.Project.Infra.CrossCutting.Bus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+daf785436fdb662c1cb100484de891c468334ae9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eba4f04b6df364c3fd0152e0c8863276057ab653")]
 [assembly: System.Reflection.AssemblyProductAttribute("MVP.Project.Infra.CrossCutting.Bus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MVP.Project.Infra.CrossCutting.Bus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

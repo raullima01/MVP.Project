@@ -1,16 +1,16 @@
 {
   "openapi": "3.0.4",
   "info": {
-    "title": "MvpProject Project",
-    "description": "MvpProject API Swagger surface",
+    "title": "MVP Project API",
+    "description": "API para gerenciamento do MVP Project",
     "contact": {
       "name": "Raul Francisco Moreira Lima",
-      "url": "https://github.com/raullima01",
+      "url": "https://github.com/raulzerahh",
       "email": "raul.fml@outlook.com.br"
     },
     "license": {
       "name": "MIT",
-      "url": "https://github.com/raullima01"
+      "url": "https://opensource.org/licenses/MIT"
     },
     "version": "v1"
   },
@@ -46,38 +46,7 @@
         }
       }
     },
-    "/account/enter": {
-      "post": {
-        "tags": [
-          "Account"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/LoginUser"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/LoginUser"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/LoginUser"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/customer/get": {
+    "/customer-getall": {
       "get": {
         "tags": [
           "Customer"
@@ -186,21 +155,10 @@
         }
       }
     },
-    "/customer/update/{id}": {
-      "patch": {
+    "/customer-update": {
+      "put": {
         "tags": [
           "Customer"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
         ],
         "requestBody": {
           "content": {
@@ -228,7 +186,7 @@
         }
       }
     },
-    "/customer/remove": {
+    "/customer-delete": {
       "delete": {
         "tags": [
           "Customer"
@@ -299,7 +257,19 @@
         }
       }
     },
-    "/error/{id}": {
+    "/Home": {
+      "get": {
+        "tags": [
+          "Home"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Home/error/{id}": {
       "get": {
         "tags": [
           "Home"
@@ -310,8 +280,6 @@
             "in": "path",
             "required": true,
             "schema": {
-              "maxLength": 3,
-              "minLength": 3,
               "type": "integer",
               "format": "int32"
             }
@@ -319,7 +287,27 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorViewModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorViewModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorViewModel"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -452,22 +440,20 @@
         },
         "additionalProperties": false
       },
-      "LoginUser": {
-        "required": [
-          "email",
-          "password"
-        ],
+      "ErrorViewModel": {
         "type": "object",
         "properties": {
-          "email": {
-            "minLength": 1,
-            "type": "string",
-            "format": "email"
+          "errorCode": {
+            "type": "integer",
+            "format": "int32"
           },
-          "password": {
-            "maxLength": 100,
-            "minLength": 6,
-            "type": "string"
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

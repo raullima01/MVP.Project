@@ -18,7 +18,7 @@ namespace MVP.Project.Services.Api.Controllers
         }
 
         [AllowAnonymous]
-        [HttpGet("customer")]
+        [HttpGet("customer-getall")]
         public async Task<IEnumerable<CustomerViewModel>> Get()
         {
             return await _customerAppService.GetAll();
@@ -39,14 +39,14 @@ namespace MVP.Project.Services.Api.Controllers
         }
 
         [AllowAnonymous]
-        [HttpPut("customer")]
+        [HttpPatch("customer-update")]
         public async Task<IActionResult> Put([FromBody]CustomerViewModel customerViewModel)
         {
             return !ModelState.IsValid ? CustomResponse(ModelState) : CustomResponse(await _customerAppService.Update(customerViewModel));
         }
 
         [AllowAnonymous]
-        [HttpDelete("customer")]
+        [HttpDelete("customer-delete")]
         public async Task<IActionResult> Delete(Guid id)
         {
             return CustomResponse(await _customerAppService.Remove(id));
